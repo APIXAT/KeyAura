@@ -295,4 +295,5 @@ For issues, questions, or feature requests, please open an issue on the reposito
 ---
 
 
-**KeyAura** - Transform your typing experience with custom keyboard sounds and a complete virtual keyboard! ✨ 
+**KeyAura** - Transform your typing experience with custom keyboard sounds and a complete virtual keyboard!  ✨ 
+
