@@ -1,0 +1,55 @@
+{
+  "app_settings": {
+    "window_size": "1400x900",
+    "min_window_size": "1200x800",
+    "theme": "dark",
+    "default_volume": 0.7,
+    "default_layout": "100%"
+  },
+  "audio_settings": {
+    "sample_rate": 44100,
+    "channels": 2,
+    "buffer_size": 512,
+    "supported_formats": ["mp3", "wav", "ogg"]
+  },
+  "ui_settings": {
+    "primary_color": "#00ff88",
+    "background_color": "#1a1a1a",
+    "secondary_background": "#2d2d2d",
+    "accent_blue": "#4a90e2",
+    "accent_green": "#27ae60",
+    "accent_orange": "#f39c12",
+    "accent_red": "#e74c3c",
+    "accent_purple": "#9b59b6",
+    "text_primary": "#ffffff",
+    "text_secondary": "#cccccc"
+  },
+  "keyboard_layouts": {
+    "67%": {
+      "description": "Compact layout with function keys",
+      "keys": ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "M"]
+    },
+    "75%": {
+      "description": "Standard layout with navigation keys",
+      "keys": ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "M"]
+    },
+    "100%": {
+      "description": "Full-size layout with all keys",
+      "keys": ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "M"]
+    }
+  },
+  "default_templates": {
+    "Mechanical Vibes": {
+      "description": "Classic mechanical keyboard sounds",
+      "category": "mechanical"
+    },
+    "Hacker Mode": {
+      "description": "Cyberpunk-inspired sound effects",
+      "category": "electronic"
+    },
+    "Nature Sounds": {
+      "description": "Relaxing nature-inspired key sounds",
+      "category": "ambient"
+    }
+  }
+} 

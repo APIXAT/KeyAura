@@ -1,0 +1,33 @@
+{
+  "name": "Mechanical Vibes",
+  "key_sounds": {
+    "A": "sounds/mechanical_key_1.mp3",
+    "S": "sounds/mechanical_key_2.mp3",
+    "D": "sounds/mechanical_key_3.mp3",
+    "F": "sounds/mechanical_key_1.mp3",
+    "G": "sounds/mechanical_key_2.mp3",
+    "H": "sounds/mechanical_key_3.mp3",
+    "J": "sounds/mechanical_key_1.mp3",
+    "K": "sounds/mechanical_key_2.mp3",
+    "L": "sounds/mechanical_key_3.mp3",
+    "Q": "sounds/mechanical_key_1.mp3",
+    "W": "sounds/mechanical_key_2.mp3",
+    "E": "sounds/mechanical_key_3.mp3",
+    "R": "sounds/mechanical_key_1.mp3",
+    "T": "sounds/mechanical_key_2.mp3",
+    "Y": "sounds/mechanical_key_3.mp3",
+    "U": "sounds/mechanical_key_1.mp3",
+    "I": "sounds/mechanical_key_2.mp3",
+    "O": "sounds/mechanical_key_3.mp3",
+    "P": "sounds/mechanical_key_1.mp3",
+    "Z": "sounds/mechanical_key_2.mp3",
+    "X": "sounds/mechanical_key_3.mp3",
+    "C": "sounds/mechanical_key_1.mp3",
+    "V": "sounds/mechanical_key_2.mp3",
+    "B": "sounds/mechanical_key_3.mp3",
+    "N": "sounds/mechanical_key_1.mp3",
+    "M": "sounds/mechanical_key_2.mp3"
+  },
+  "layout": "100%",
+  "created": "2024-01-15 14:30:00"
+} 

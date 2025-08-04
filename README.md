@@ -1,146 +1,297 @@
-# KeyAura
-A simple desktop tool that plays sound effects when typing or clicking buttons. Perfect for making your workspace more fun and immersive. Designed with style by APIXAT 🎧
+# KeyAura 🎹
 
-## 🚀 Quick Start
+A modern, dark-themed interactive desktop application for customizing keyboard sound effects and managing sound templates with advanced multi-key selection capabilities and a complete virtual keyboard.
 
-### Option 1: One-Click Launch (Windows)
-1. **Double-click** `run_keyaura.bat`
-2. **Wait** for dependencies to install (first time only)
-3. **Enjoy** your custom keyboard sounds with multi-key selection!
+## Features ✨
 
-### Option 2: Command Line
-```bash
-python launcher.py
-```
+### 🎨 Modern Dark Theme
+- Sleek, dark interface with neon accents
+- Smooth animations and hover effects
+- Responsive design that adapts to different screen sizes
 
-## 🎯 What You Can Do
+### ⌨️ Complete Interactive Virtual Keyboard
+- **Full QWERTY Layout**: Complete keyboard with Q-Z, A-L, Z-M keys
+- **NEW: Additional Keys**: Space, Enter, Shift, and Ctrl keys
+- **Multiple Layout Options**: 67%, 75%, and 100% keyboard layouts
+- **Rounded, Modern Design**: Buttons with shadow effects and smooth animations
+- **NEW: Ctrl+Click Multi-Key Selection** with real-time visual feedback
+- **Responsive Layout**: Buttons maintain size and position when resizing window
+- **Dynamic Sizing**: Different button sizes for different key types (Space/Enter are wider)
 
-### 1. Test the Interactive Virtual Keyboard
-- **Single Click**: Click any key to select it
-- **Ctrl+Click**: Hold Ctrl and click multiple keys to select them as a group
-- **Visual Feedback**: Selected keys highlight in green with glowing borders
-- **Real-time Display**: See selected keys in the customization panel
+### 🎯 Advanced Key Selection System
+- **Single Key Selection**: Click any key to select it individually
+- **Ctrl+Click Multi-Selection**: Hold Ctrl and click multiple keys to select them as a group
+- **Mixed Key Types**: Select combinations of letters, Space, Enter, Shift, and Ctrl
+- **Visual Feedback**: Selected keys highlight in green (#00ff88) with glowing borders
+- **Real-time Display**: Selected keys are shown in the customization panel
+- **Toggle Selection**: Ctrl+click again to deselect individual keys
+- **Dynamic Updates**: Selection display updates instantly as you select/deselect keys
 
-### 2. 🆕 Multi-Key Selection (NEW!)
-1. **Hold Ctrl** and click multiple keys
-2. **Watch** as keys highlight in green
-3. **See** selected keys displayed in real-time
+### 🔊 Enhanced Sound Customization
+- **Individual Key Assignment**: Assign unique sounds to specific keys
+- **Group Sound Assignment**: Apply the same sound to multiple selected keys
+- **Mixed Key Types**: Assign sounds to combinations of letters and special keys
+- **Bulk Operations**: Apply sounds to all keys or clear selected keys
+- **Sound Preview**: Test sounds before applying them
+- **Multiple Formats**: Support for MP3, WAV, and OGG audio files
+- **Volume Control**: Real-time volume adjustment with slider
+- **Global Toggle**: Enable/disable all sounds with one click
+
+### 📁 Template Management System
+- **Save Configurations**: Save current key sounds and layout as templates
+- **Load Templates**: Quickly switch between different sound configurations
+- **Template Cards**: Visual cards showing template name, creation date, and layout
+- **CRUD Operations**: Create, Read, Update, and Delete templates
+- **JSON Storage**: Templates stored as human-readable JSON files
+- **Auto-loading**: Templates automatically load on application startup
+
+### 🎧 Template Features
+- **Customizable Template Names**: Create descriptive template names
+- **Keyboard Layout Preservation**: Layout settings saved with templates
+- **Easy Template Switching**: Instant template loading and application
+- **Template Preview and Management**: Visual template organization
+
+## Installation 🚀
+
+### Prerequisites
+- Python 3.11 or higher
+- Windows 10/11 (tested on Windows 10.0.26100)
+
+### Setup Instructions
+
+1. **Clone or download the project**
+   ```bash
+   git clone <repository-url>
+   cd KeyAura
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**
+   ```bash
+   python main.py
+   ```
+
+## Usage Guide 📖
+
+### Getting Started
+1. Launch KeyAura
+2. The application will create `templates/` and `sounds/` directories automatically
+3. Start customizing your keyboard sounds!
+
+### 🎯 Multi-Key Selection (NEW!)
+
+#### Single Key Selection
+1. **Click any key** on the virtual keyboard (letters, Space, Enter, Shift, Ctrl)
+2. The key will **highlight in green** to show it's selected
+3. The selected key appears in the customization panel
+
+#### Multi-Key Selection
+1. **Hold Ctrl** and click multiple keys (mix different key types)
+2. **Selected keys highlight in green** with glowing borders
+3. **Real-time display** shows all selected keys
 4. **Ctrl+click again** to deselect individual keys
 
-### 3. Enhanced Sound Customization
-1. **Select keys** using single click or Ctrl+click
+### 🔊 Enhanced Sound Customization
+
+#### Individual Key Assignment
+1. **Select a key** (single click or Ctrl+click)
 2. **Browse** for an audio file (MP3, WAV, or OGG)
 3. **Preview** the sound to ensure it's correct
-4. **Choose your action**:
-   - **"Apply to Selected Keys"** - Assign to selected keys only
-   - **"Apply to All Keys"** - Assign to every key
-   - **"Clear Selected"** - Remove sounds from selected keys
+4. **Click "Apply to Selected Keys"**
 
-### 4. Create Templates
-1. **Customize your key sounds** using the new selection features
-2. **Click "🎧 Add Template"** in the top bar
-3. **Give your template a name**
-4. **Save and reuse** anytime!
+#### Multi-Key Sound Assignment
+1. **Use Ctrl+Click** to select multiple keys (including Space, Enter, Shift, Ctrl)
+2. **Browse** for a sound file
+3. **Click "Apply to Selected Keys"** to assign the same sound to all selected keys
 
-### 5. Manage Volume and Sound
-- **Volume slider** in the top bar for fine control
-- **Toggle sound** on/off with the 🔊 button
-- **Real-time volume adjustment**
+#### Bulk Operations
+- **"Apply to All Keys"**: Assign the same sound to every key (including new keys)
+- **"Clear Selected"**: Remove sounds from selected keys only
+- **"Preview"**: Test sounds before applying them
 
-## 🎵 Getting Sound Files
+### Creating Templates
+1. Customize your key sounds using the enhanced selection features
+2. Click **"🎧 Add Template"** in the top bar
+3. Enter a template name (e.g., "Mechanical Vibes", "Hacker Mode")
+4. Your current sound configuration will be saved
 
-### Free Sound Resources
-- **Freesound.org**: Free sound effects
-- **Zapsplat**: Royalty-free audio
-- **SoundBible**: Simple sound effects
+### Managing Templates
+- **Use**: Load a template's sound configuration
+- **Edit**: Modify template settings (coming soon)
+- **Delete**: Remove templates from your collection
 
-### Recommended Sound Types
-- **Mechanical**: Click, clack, thock sounds
-- **Electronic**: Beep, chime, digital sounds
-- **Nature**: Water drops, leaves, wind
-- **Custom**: Your own recordings
+### Keyboard Layouts
+- Choose between 67%, 75%, and 100% layouts
+- Layout changes are saved with templates
 
-## 📁 File Organization
+## File Structure 📁
 
 ```
 KeyAura/
-├── sounds/          # Put your audio files here
-├── templates/       # Your saved configurations
-└── [other files]    # Application files
+├── main.py                 # Main application with complete features
+├── enhanced_main.py        # Alternative enhanced version
+├── demo_complete.py        # Complete demo showcasing all features
+├── demo_enhanced.py        # Demo for enhanced features
+├── launcher.py            # Dependency checker and launcher
+├── demo.py                # Basic demo script
+├── requirements.txt       # Python dependencies
+├── config.json           # Application configuration
+├── run_keyaura.bat       # Windows launcher
+├── README.md             # This file
+├── INSTALL.md            # Installation guide
+├── QUICK_START.md        # Quick start guide
+├── FEATURES.md           # Complete features overview
+├── sample_template.json  # Example template
+├── templates/            # Template storage (auto-created)
+└── sounds/              # Sound file storage (auto-created)
 ```
 
-## ⚡ Pro Tips
+## Dependencies 📦
 
-### 🎯 Multi-Key Selection Tips
-1. **Hold Ctrl** while clicking to select multiple keys
-2. **Watch the display** to see which keys are selected
-3. **Ctrl+click again** to deselect individual keys
-4. **Use "Apply to Selected Keys"** for group operations
+- **customtkinter**: Modern UI framework
+- **pygame**: Audio playback and mixing
+- **Pillow**: Image processing (for future features)
 
-### 🔊 Sound Management Tips
-1. **Preview sounds** before applying them
-2. **Use "Apply to All Keys"** for quick setup
-3. **Create different templates** for different moods
-4. **Backup your templates** by copying the `templates/` folder
+## Technical Details 🔧
 
-### 🎨 Visual Feedback
-1. **Green highlighting** shows selected keys
-2. **Blue hover effects** on interactive elements
-3. **Real-time updates** in the customization panel
-4. **Smooth animations** for all interactions
+### Audio Support
+- **Formats**: MP3, WAV, OGG
+- **Engine**: pygame.mixer
+- **Features**: Real-time playback, volume control
 
-## 🆘 Need Help?
+### Data Storage
+- **Templates**: JSON files in `templates/` directory
+- **Structure**: Template name, key sounds, layout, creation date
+- **Persistence**: Automatic loading on startup
 
-- **Read the full documentation**: [README.md](README.md)
-- **Check installation guide**: [INSTALL.md](INSTALL.md)
-- **Run the enhanced demo**: `python demo_enhanced.py`
-- **Run the basic demo**: `python demo.py`
+### UI Framework
+- **Framework**: CustomTkinter
+- **Theme**: Dark mode with custom color palette
+- **Responsive**: Adapts to window resizing with grid layout
 
-## 🎹 Enhanced Workflow Example
+### 🎯 New Multi-Key Selection System
+- **Ctrl Key Detection**: Real-time keyboard event monitoring
+- **Visual Feedback**: Dynamic color changes and borders
+- **State Management**: Efficient tracking of selected keys
+- **Smooth Animations**: Fluid transitions and hover effects
 
-### Basic Workflow
-1. **Start KeyAura**: `python launcher.py`
-2. **Select a key**: Click "A" on the virtual keyboard
-3. **Add a sound**: Browse → Select MP3 → Apply to Selected Keys
-4. **Test it**: Click the "A" key to hear the sound
+### 📐 Enhanced Layout System
+- **Grid-based Layout**: Responsive design using CustomTkinter grid
+- **Dynamic Resizing**: Buttons maintain size and position when window is resized
+- **Proportional Panels**: Left panel (2/3 width), Right panel (1/3 width)
+- **Improved Spacing**: Better padding, margins, and visual hierarchy
 
-### 🆕 Advanced Multi-Key Workflow
-1. **Start KeyAura**: `python launcher.py`
-2. **Select multiple keys**: Hold Ctrl and click A, S, D, F
-3. **Watch the display**: See "Selected keys: A, D, F, S"
-4. **Add a sound**: Browse → Select MP3 → Apply to Selected Keys
-5. **Test the group**: Click any of the selected keys to hear the sound
-6. **Create template**: Click "🎧 Add Template" → Name it "My Multi-Key Template"
-7. **Enjoy**: Your custom multi-key sound configuration is ready!
+## Color Palette 🎨
 
-### 🎯 Pro Workflow
-1. **Create different sound zones**:
-   - Select A, S, D, F → Apply mechanical sound
-   - Select G, H, J, K → Apply electronic sound
-   - Select L, Z, X, C → Apply nature sound
-2. **Save as template**: "Mixed Sound Zones"
-3. **Switch between templates** for different moods
+- **Primary Background**: #1a1a1a (Dark Gray)
+- **Secondary Background**: #2d2d2d (Medium Gray)
+- **Accent Blue**: #4a90e2 (Primary Action)
+- **Accent Green**: #27ae60 (Success Actions)
+- **Accent Orange**: #f39c12 (Warning Actions)
+- **Accent Red**: #e74c3c (Delete Actions)
+- **Accent Purple**: #9b59b6 (Template Actions)
+- **Text Primary**: #ffffff (White)
+- **Text Secondary**: #cccccc (Light Gray)
+- **Brand Color**: #00ff88 (Neon Green)
+- **Selection Color**: #00ff88 (Green for selected keys)
 
-## 🆕 New Features Summary
+## 🆕 New Features in This Version
 
-### 🎯 Multi-Key Selection
-- **Ctrl+Click** to select multiple keys
-- **Real-time visual feedback** with green highlighting
-- **Dynamic display** of selected keys
-- **Toggle selection** by Ctrl+clicking again
+### ⌨️ Complete Virtual Keyboard
+- **30 Total Keys**: 26 letters + Space, Enter, Shift, Ctrl
+- **Dynamic Button Sizing**: Space/Enter are wider, Shift/Ctrl are medium-sized
+- **Professional Layout**: Proper keyboard spacing and alignment
+- **Mixed Key Types**: Support for letters and special keys
 
-### 🔊 Enhanced Sound Management
-- **Apply to Selected Keys** for group operations
-- **Apply to All Keys** for bulk assignment
+### 🎯 Enhanced Multi-Key Selection
+- **Mixed Key Selection**: Select combinations of letters and special keys
+- **Real-time Visual Feedback** with green highlighting
+- **Dynamic Selection Display** in the customization panel
+- **Toggle Selection** by Ctrl+clicking again
+
+### 🔊 Complete Sound Management
+- **All Key Types**: Assign sounds to letters, Space, Enter, Shift, Ctrl
+- **Apply to Selected Keys** button for group operations
+- **Apply to All Keys** for bulk assignment (including new keys)
 - **Clear Selected** for removing sounds from specific keys
-- **Improved preview** functionality
+- **Improved Preview** functionality with volume control
 
-### ✨ Visual Enhancements
-- **Smooth animations** for all interactions
-- **Enhanced hover effects** with glowing borders
-- **Real-time status updates** for selected keys
-- **Better visual hierarchy** and styling
+### ✨ Enhanced Visual Design
+- **Larger Window**: 1600x1000 default size for better usability
+- **Improved Proportions**: 2:1 left/right panel ratio
+- **Better Typography**: Larger fonts and improved readability
+- **Enhanced Spacing**: More professional padding and margins
+- **Responsive Layout**: Maintains button sizes during window resizing
+
+### 📁 Advanced Template Management
+- **Complete Key Support**: Templates include all 30 keys
+- **Enhanced Template Cards** with more information
+- **Improved Layout** for better organization
+- **Better Visual Feedback** for template operations
+
+## Future Enhancements 🚀
+
+- [ ] Template editing interface
+- [ ] Sound volume control per key
+- [ ] Keyboard layout customization
+- [ ] Sound effect categories
+- [ ] Import/export template collections
+- [ ] Real-time keyboard input detection
+- [ ] Sound visualization
+- [ ] Multiple sound profiles per template
+- [ ] **NEW: Drag and drop key selection**
+- [ ] **NEW: Keyboard shortcuts for common actions**
+- [ ] **NEW: Additional special keys (Backspace, Tab, etc.)**
+
+## Troubleshooting 🔧
+
+### Common Issues
+
+**Audio not playing:**
+- Ensure audio files are in supported formats (MP3, WAV, OGG)
+- Check system audio settings
+- Verify pygame installation
+
+**Template not loading:**
+- Check file permissions in `templates/` directory
+- Ensure JSON files are not corrupted
+- Restart the application
+
+**UI not displaying correctly:**
+- Update CustomTkinter: `pip install --upgrade customtkinter`
+- Check Python version (requires 3.11+)
+- Verify all dependencies are installed
+
+**Multi-key selection not working:**
+- Ensure you're holding Ctrl while clicking
+- Check that the application window has focus
+- Try clicking the keys in sequence
+
+**Window resizing issues:**
+- Ensure minimum window size (1400x900)
+- Check that all UI elements are properly configured
+- Restart the application if layout becomes corrupted
+
+## Contributing 🤝
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License 📄
+
+This project is open source and available under the MIT License.
+
+## Support 💬
+
+For issues, questions, or feature requests, please open an issue on the repository.
 
 ---
 
-**Ready to create your perfect typing experience with advanced multi-key selection?** 🎹✨
+**KeyAura** - Transform your typing experience with custom keyboard sounds and a complete virtual keyboard! 🎹✨ 
