@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-KeyAura Demo Script
-This script demonstrates how to use the KeyAura application programmatically.
-"""
-
 import json
 import os
 import time
